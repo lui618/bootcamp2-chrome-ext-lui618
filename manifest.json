@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Link Highlighter",
+  "version": "1.0.0",
+  "description": "Destaca todos os links na página com um clique.",
+  "icons": {
+    "16": "src/icons/icon.png",
+    "32": "src/icons/icon.png",
+    "48": "src/icons/icon.png",
+    "128": "src/icons/icon.png"
+  },
+  "action": {
+    "default_title": "Link Highlighter",
+    "default_popup": "src/popup/popup.html"
+  },
+  "background": {
+    "service_worker": "src/background/service-worker.js"
+  },
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": ["<all_urls>"]
+}
